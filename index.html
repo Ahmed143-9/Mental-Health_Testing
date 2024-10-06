@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Mental Health Check.</h1>
+        <h2 id="lastone">System is Waiting for Your Valid Answer!</h2><br>
+        <div class="quiz">
+            <h2 id="question"></h2>
+            <div id="answer-buttons">
+                <button class="btn" onclick="selectAnswer('A1')">Answer 1</button>
+                <button class="btn" onclick="selectAnswer('A2')">Answer 2</button>
+                <button class="btn" onclick="selectAnswer('A3')">Answer 3</button>
+                <button class="btn" onclick="selectAnswer('A4')">Answer 4</button>
+                <button class="btn" onclick="selectAnswer('A5')">Answer 5</button>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result" style="display:none;">
+            <h2 id="nothing">Your Mental Health Result:</h2>
+            <p id="mentalState"></p>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
